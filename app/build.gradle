@@ -28,7 +28,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile ("org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"){
-        transitive = false
+        transitive = false //Duplicate files copied in APK kotlin/internal/internal.kotlin_builtins
     }
     // Anko
     compile "org.jetbrains.anko:anko:0.10.1"

@@ -1,7 +1,7 @@
 # plmm_kotlin
 kotlin_study plmm
 ##  相关介绍
-与项目https://github.com/zhouzidan/plmm的功能是相同的
+与项目https://github.com/zhouzidan/plmm 的功能是相同的
 
 主要是实现方式不同
 

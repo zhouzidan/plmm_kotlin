@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.item_img.view.*
  * Created by zhou on 2017/6/4.
  */
 class GridAdapter(val context: Context
-                  , val datas: List<ImgGroup>
+                  , val datas: ArrayList<ImgGroup>
                   , val listener: (ImgGroup) -> Unit) : RecyclerView.Adapter<GridAdapter.ViewHolder>() {
 
     val inflater: LayoutInflater
@@ -37,11 +37,10 @@ class GridAdapter(val context: Context
         fun bind(position: Int
                  , datas: List<ImgGroup>
                  , listener: (ImgGroup) -> Unit)
-                = with(itemView) {
+                /*with(itemView)*/ {
             val imgGroup = datas.get(position)
-            imageView.loadUrl(imgGroup.firstImgUrl)
-//            Picasso.with(GlobalApp.instance()).load(imgGroup.firstImgUrl).into(imageView)
-            setOnClickListener { listener(imgGroup) }
+            itemView.imageView.loadUrl(imgGroup.firstImgUrl)
+            itemView.setOnClickListener { listener(imgGroup) }
         }
     }
 }
